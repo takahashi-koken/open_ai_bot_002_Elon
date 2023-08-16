@@ -74,8 +74,7 @@ document.addEventListener("keydown", function(e) {
 """
 
 #テキスト入力
-st.write("僕が要約するよ！")
-
+st.write("僕に要約させたい文章を入力してみてくれ")
 
 
 user_input = st.text_area("メッセージを入力してください。", key="user_input" , on_change=communicate)
