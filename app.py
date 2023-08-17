@@ -48,7 +48,7 @@ def communicate():
 # ユーザーインターフェイスの構築
 #---------------------------------------------
 #タイトル
-st.title("イーロン・マスクが要約するよ！")
+st.title("忙しい君のために僕が要約するよ！")
 
 #見出し
 lines = [
@@ -59,7 +59,7 @@ text = "\n".join(lines)
 st.write(text)
 
 #画像
-st.image("26_ElonMusk.png")
+st.image("26_ElonMusk-v2.png")
 
 
 
@@ -76,8 +76,7 @@ document.addEventListener("keydown", function(e) {
 #テキスト入力
 st.write("僕に要約させたい文章を入力してみてくれ")
 
-
-user_input = st.text_area("メッセージを入力してください。", key="user_input" , on_change=communicate)
+user_input = st.text_area("文章をを入力し、[Ctrl]＋[Shift] を押下してください。", key="user_input" , on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
