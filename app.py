@@ -78,7 +78,7 @@ st.write("僕に要約させたい文章を入力してみてくれ")
 user_input = st.text_area("文章をを入力し、[Ctrl]＋[Enter] を押下してください。", key="user_input" , on_change=communicate)
 
 if st.session_state["messages"]:
-    messages = st.session_state["messages"]Enter
+    messages = st.session_state["messages"]
 
     for message in reversed(messages[1:]):  # 直近のメッセージを上に
         speaker = "🙂"
