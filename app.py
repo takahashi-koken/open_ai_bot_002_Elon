@@ -52,7 +52,7 @@ st.title("忙しい君のために僕が要約するよ！")
 #見出し
 lines = [
     "①新しい相談は[F5]押下等でリロードしてください     ",
-    "②入力後は [Ctrl]＋[Shift] で実行します"
+    "②入力後は [Ctrl]＋[Enter] で実行します"
 ]
 text = "\n".join(lines)
 st.write(text)
@@ -75,10 +75,10 @@ document.addEventListener("keydown", function(e) {
 #テキスト入力
 st.write("僕に要約させたい文章を入力してみてくれ")
 
-user_input = st.text_area("文章をを入力し、[Ctrl]＋[Shift] を押下してください。", key="user_input" , on_change=communicate)
+user_input = st.text_area("文章をを入力し、[Ctrl]＋[Enter] を押下してください。", key="user_input" , on_change=communicate)
 
 if st.session_state["messages"]:
-    messages = st.session_state["messages"]
+    messages = st.session_state["messages"]Enter
 
     for message in reversed(messages[1:]):  # 直近のメッセージを上に
         speaker = "🙂"
